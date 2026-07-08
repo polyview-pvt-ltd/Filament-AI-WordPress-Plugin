@@ -33,6 +33,9 @@ require_once FILAMENT_AI_PATH . 'includes/class-filament-ai-assets.php';
 require_once FILAMENT_AI_PATH . 'includes/class-filament-ai-settings.php';
 require_once FILAMENT_AI_PATH . 'includes/class-filament-ai-pricing.php';
 require_once FILAMENT_AI_PATH . 'includes/class-filament-ai-filaments.php';
+require_once FILAMENT_AI_PATH . 'includes/class-filament-ai-orders.php';
+require_once FILAMENT_AI_PATH . 'includes/class-filament-ai-api.php';
+require_once FILAMENT_AI_PATH . 'includes/class-filament-ai-download.php';
 
 add_filter('template_include', function ($template) {
 
@@ -53,3 +56,5 @@ new Filament_AI();
 new Filament_AI_Settings();
 new Filament_AI_Pricing();
 new Filament_AI_Filaments();
+new Filament_AI_Orders();
+new Filament_AI_Download();
